@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c0c0e" />
+    <meta name="description" content="GOJO DEV Studio — продающие сайты, веб-сервисы и smart-калькуляторы для бизнеса под ключ." />
+    <meta property="og:title" content="GOJO DEV // STUDIO — сайты, которые приводят клиентов" />
+    <meta property="og:description" content="Быстрая разработка сайтов и веб-сервисов для бизнеса. Портфолио, цены и расчет проекта." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>GOJO DEV // STUDIO — сайты, которые приводят клиентов</title>
+    <script src="/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Перейти к содержанию</a>
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="GOJO DEV Studio, наверх">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="brand-word">GOJO DEV <small>// STUDIO</small></span>
+        </a>
+        <nav class="desktop-nav" aria-label="Основная навигация">
+          <a href="#projects" data-i18n="navProjects">Проекты</a>
+          <a href="#services" data-i18n="navServices">Услуги</a>
+          <a href="#calculator" data-i18n="navCalculator">Калькулятор</a>
+          <a href="#process" data-i18n="navProcess">Как работаем</a>
+        </nav>
+        <div class="header-actions">
+          <div class="language-switch" role="group" aria-label="Выбрать язык">
+            <button type="button" class="lang-button is-active" data-lang="ru" aria-pressed="true">RU</button>
+            <span aria-hidden="true">/</span>
+            <button type="button" class="lang-button" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+          <a class="button button-small button-accent header-cta" href="https://t.me/NexusWeb_io" target="_blank" rel="noopener noreferrer"><span data-i18n="discuss">Обсудить проект</span><span aria-hidden="true">↗</span></a>
+          <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Мобильная навигация" hidden>
+        <a href="#projects" data-i18n="navProjects">Проекты</a>
+        <a href="#services" data-i18n="navServices">Услуги</a>
+        <a href="#calculator" data-i18n="navCalculator">Калькулятор</a>
+        <a href="#process" data-i18n="navProcess">Как работаем</a>
+        <a href="https://t.me/NexusWeb_io" target="_blank" rel="noopener noreferrer" data-i18n="discuss">Обсудить проект ↗</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="availability"><span class="pulse-dot"></span><span data-i18n="heroBadge">Разработка сайтов за 24–48 часов · Оплата в USDT / Карты</span></div>
+          <p class="eyebrow hero-kicker"><span data-i18n="heroKicker">Веб-разработка для амбициозного бизнеса</span><span class="eyebrow-line"></span> <span>2026</span></p>
+          <h1 id="hero-title" data-i18n="heroTitle">Создаю сайты, которые выглядят дорого и приводят клиентов из поиска и рекламы</h1>
+          <p class="hero-description" data-i18n="heroDescription">Продающие лендинги, многоязычные сайты для бизнеса и интерактивные веб-сервисы под ключ. Быстрый запуск, адаптив под смартфоны и интеграция с мессенджерами.</p>
+          <div class="hero-buttons">
+            <a class="button button-accent" href="#projects"><span data-i18n="seeProjects">Смотреть проекты</span><span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="https://t.me/NexusWeb_io" target="_blank" rel="noopener noreferrer"><span data-i18n="writeTelegram">Написать в Telegram</span><span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-stats" aria-label="Преимущества">
+            <div class="hero-stat"><strong>24–48 <small>ч</small></strong><span data-i18n="statLaunch">средний срок запуска</span></div>
+            <div class="hero-stat"><strong>100<small>%</small></strong><span data-i18n="statResponsive">адаптивность и скорость</span></div>
+            <div class="hero-stat"><strong>USDT <small>/ MDL</small></strong><span data-i18n="statPayment">удобная оплата</span></div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Превью рабочего процесса GOJO DEV">
+          <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+          <div class="visual-glow"></div>
+          <div class="build-card">
+            <div class="build-top"><div class="window-dots"><i></i><i></i><i></i></div><span data-i18n="buildPreview">ЖИВОЕ ПРЕВЬЮ</span><span class="build-live"><i></i> <span data-i18n="buildLive">В РАБОТЕ</span></span></div>
+            <div class="build-body">
+              <div class="build-brand"><span class="mini-mark">G.</span><span>STUDIO / 01</span></div>
+              <p class="build-overline" data-i18n="buildOverline">ЦИФРОВОЙ ОПЫТ</p>
+              <div class="build-heading"><span data-i18n="buildHeading">Создано для роста</span><em data-i18n="buildHeadingAccent">бизнеса.</em></div>
+              <div class="build-bars"><i></i><i></i></div>
+              <div class="build-chip-row"><span>UI / UX</span><span data-i18n="buildChipWeb">САЙТ</span><span data-i18n="buildChipSpeed">БЫСТРО</span></div>
+            </div>
+            <div class="build-bottom"><span><i class="status-dot"></i> <span data-i18n="buildStatus">Проект запущен</span></span><strong>42h <small>↗</small></strong></div>
+          </div>
+          <div class="floating-note note-top"><span class="note-icon">✳</span><span><b data-i18n="noteConversion">Конверсия</b><small data-i18n="noteConversionSub">на первом месте</small></span></div>
+          <div class="floating-note note-bottom"><span class="note-number">01</span><span><b data-i18n="noteFast">Запуск без пауз</b><small data-i18n="noteFastSub">от идеи до сайта</small></span><span class="note-arrow">↗</span></div>
+          <span class="visual-index">GD—001</span>
+        </div>
+      </section>
+
+      <section class="section-wrap section-block" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading" data-reveal>
+          <div><p class="section-label"><span>01</span><span data-i18n="projectsLabel">Портфолио</span></p><h2 id="projects-title" data-i18n="projectsTitle">Избранные проекты</h2></div>
+          <p class="section-aside" data-i18n="projectsAside">Реальные задачи. Продуманные интерфейсы.<br />Результат, который работает на бизнес.</p>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+      </section>
+
+      <section class="section-wrap section-block" id="services" aria-labelledby="services-title">
+        <div class="section-heading" data-reveal>
+          <div><p class="section-label"><span>02</span><span data-i18n="servicesLabel">Возможности</span></p><h2 id="services-title" data-i18n="servicesTitle">Услуги и форматы</h2></div>
+          <p class="section-aside" data-i18n="servicesAside">Выберите решение под свою задачу.<br />Финальная стоимость зависит от объема.</p>
+        </div>
+        <div class="services-grid" id="services-grid"></div>
+      </section>
+
+      <section class="section-wrap section-block calculator-section" id="calculator" aria-labelledby="calculator-title">
+        <div class="section-heading" data-reveal>
+          <div><p class="section-label"><span>03</span><span>Smart Estimate</span></p><h2 id="calculator-title" data-i18n="calculatorTitle">Рассчитайте свой проект</h2></div>
+          <p class="section-aside" data-i18n="calculatorAside">Соберите конфигурацию сайта<br />и узнайте ориентировочную цену.</p>
+        </div>
+        <div class="calculator-card" data-reveal>
+          <div class="calculator-main">
+            <div class="calc-step-head"><span class="step-index">01</span><div><h3 data-i18n="projectType">Тип проекта</h3><p data-i18n="chooseBase">Выберите основу сайта</p></div></div>
+            <div class="project-options" id="project-options" role="radiogroup" aria-label="Тип проекта"></div>
+            <div class="calc-divider"></div>
+            <div class="calc-step-head"><span class="step-index">02</span><div><h3 data-i18n="extrasTitle">Дополнительные опции</h3><p data-i18n="extrasSub">Добавьте нужные возможности</p></div></div>
+            <div class="extra-options" id="extra-options"></div>
+          </div>
+          <aside class="estimate-panel" aria-live="polite">
+            <p class="estimate-label"><span class="estimate-dot"></span><span data-i18n="estimateLabel">Предварительная оценка</span></p>
+            <p class="estimate-caption" data-i18n="estimateCaption">Ваш проект</p>
+            <div class="estimate-total"><span id="estimate-total">150</span><small>USDT</small></div>
+            <div class="estimate-breakdown" id="estimate-breakdown"></div>
+            <a class="button button-accent estimate-button" id="estimate-link" href="https://t.me/NexusWeb_io" target="_blank" rel="noopener noreferrer"><span data-i18n="sendEstimate">Отправить расчет в Telegram</span><span aria-hidden="true">↗</span></a>
+            <p class="estimate-footnote" data-i18n="estimateFootnote">Точная стоимость уточняется после обсуждения задачи.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section-wrap section-block" id="process" aria-labelledby="process-title">
+        <div class="section-heading" data-reveal>
+          <div><p class="section-label"><span>04</span><span data-i18n="processLabel">Просто и прозрачно</span></p><h2 id="process-title" data-i18n="processTitle">Как мы работаем</h2></div>
+          <p class="section-aside" data-i18n="processAside">Короткий путь от первой идеи<br />до работающего сайта.</p>
+        </div>
+        <div class="process-grid" id="process-grid"></div>
+        <div class="payment-note" data-reveal><div class="payment-icon">↗</div><div><p class="payment-kicker" data-i18n="paymentKicker">Удобная оплата</p><p data-i18n="paymentText">Без лишних комиссий: принимаю криптовалюту (USDT TRC-20 / BEP-20 / TON через Binance и Bybit), а также переводы на банковскую карту.</p></div><span class="payment-mark">USDT</span></div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-inner section-wrap" data-reveal>
+          <p class="section-label"><span>05</span><span data-i18n="contactLabel">Связаться</span></p>
+          <h2 id="contact-title" data-i18n="contactTitle">Готовы запустить сайт, который выделит ваш бизнес?</h2>
+          <p class="contact-copy" data-i18n="contactCopy">Расскажите о задаче — обсудим формат, сроки и стоимость без лишней формальности.</p>
+          <div class="contact-actions">
+            <a class="button button-accent" href="https://t.me/NexusWeb_io" target="_blank" rel="noopener noreferrer"><span data-i18n="writeTelegram">Написать в Telegram</span><span aria-hidden="true">↗</span></a>
+            <a class="button button-outline" href="https://wa.me/37378539086" target="_blank" rel="noopener noreferrer"><span data-i18n="writeWhatsApp">Написать в WhatsApp</span><span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="contact-phone" href="tel:+37378539086">+373 78 539 086 <span aria-hidden="true">↗</span></a>
+          <div class="contact-decoration" aria-hidden="true">GOJO<br /><i>DEV</i></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner section-wrap">
+        <a class="brand" href="#top" aria-label="GOJO DEV Studio, наверх"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-word">GOJO DEV <small>// STUDIO</small></span></a>
+        <p data-i18n="copyright">© 2026 GOJO DEV · Разработка сайтов под ключ</p>
+        <a class="back-top" href="#top"><span data-i18n="backTop">Наверх</span><span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
+  </body>
+</html>
