@@ -1,138 +1,375 @@
 const COPY = {
   ru: {
-    skip: "Перейти к содержанию", navProjects: "Проекты", navServices: "Услуги", navCalculator: "Калькулятор", navProcess: "Как работаем", discuss: "Обсудить проект",
-    heroBadge: "Разработка сайтов за 24–48 часов · Оплата в USDT / Карты", heroKicker: "Веб-разработка для амбициозного бизнеса", heroTitle: "Создаю сайты, которые выглядят дорого и приводят клиентов из поиска и рекламы", heroDescription: "Продающие лендинги, многоязычные сайты для бизнеса и интерактивные веб-сервисы под ключ. Быстрый запуск, адаптив под смартфоны и интеграция с мессенджерами.", seeProjects: "Смотреть проекты", writeTelegram: "Написать в Telegram", statLaunch: "средний срок запуска", statResponsive: "адаптивность и скорость", statPayment: "удобная оплата", buildPreview: "ЖИВОЕ ПРЕВЬЮ", buildLive: "В РАБОТЕ", buildOverline: "ЦИФРОВОЙ ОПЫТ", buildHeading: "Создано для роста", buildHeadingAccent: "бизнеса.", buildChipWeb: "САЙТ", buildChipSpeed: "БЫСТРО", buildStatus: "Проект запущен", noteConversion: "Конверсия", noteConversionSub: "на первом месте", noteFast: "Запуск без пауз", noteFastSub: "от идеи до сайта",
-    projectsLabel: "Портфолио", projectsTitle: "Избранные проекты", projectsAside: "Реальные задачи. Продуманные интерфейсы.<br />Результат, который работает на бизнес.", openProject: "Открыть живой сайт", servicesLabel: "Возможности", servicesTitle: "Услуги и форматы", servicesAside: "Выберите решение под свою задачу.<br />Финальная стоимость зависит от объема.", calculatorTitle: "Рассчитайте свой проект", calculatorAside: "Соберите конфигурацию сайта<br />и узнайте ориентировочную цену.", projectType: "Тип проекта", chooseBase: "Выберите основу сайта", extrasTitle: "Дополнительные опции", extrasSub: "Добавьте нужные возможности", estimateLabel: "Предварительная оценка", estimateCaption: "Ваш проект", sendEstimate: "Отправить расчет в Telegram", estimateFootnote: "Точная стоимость уточняется после обсуждения задачи.", processLabel: "Просто и прозрачно", processTitle: "Как мы работаем", processAside: "Короткий путь от первой идеи<br />до работающего сайта.", paymentKicker: "Удобная оплата", paymentText: "Без лишних комиссий: принимаю криптовалюту (USDT TRC-20 / BEP-20 / TON через Binance и Bybit), а также переводы на банковскую карту.", contactLabel: "Связаться", contactTitle: "Готовы запустить сайт, который выделит ваш бизнес?", contactCopy: "Расскажите о задаче — обсудим формат, сроки и стоимость без лишней формальности.", writeWhatsApp: "Написать в WhatsApp", copyright: "© 2026 GOJO DEV · Разработка сайтов под ключ", backTop: "Наверх", base: "Основа", options: "Опции", total: "Итого", selected: "Выбрано", currency: "USDT",
-    projects: [
-      { name: "ATMOSFERA", place: "Ресторан в Комрате", image: "/images/atmosfera-interior.jpg", alt: "Современный ресторанный интерьер в теплых тонах", description: "Атмосферный лендинг для ресторана с таб-меню (мангал, основные блюда, десерты), презентацией банкетного зала, отзывами и быстрым бронированием в WhatsApp.", tags: ["UI/UX Дизайн", "Таб-меню", "WhatsApp API", "Адаптив"], url: "http://atmosfera-comrat.pages.dev" },
-      { name: "Premium Detailing", place: "Студия автодетейлинга · Кишинев", image: "/images/premium-detailing.jpg", alt: "Полировка темного автомобиля в детейлинг-студии", description: "Премиальный сайт автостудии в темной теме с интерактивным смарт-калькулятором стоимости, слайдером отзывов и отправкой расчета в мессенджер.", tags: ["Smart-калькулятор", "Темная тема", "Конверсия", "UI Design"], url: "https://premiumdetail.gojodenis70.workers.dev" },
-      { name: "Acasă la mama", place: "Ресторан национальной кухни", image: "/images/acasa-interior.jpg", alt: "Уютный ресторан с деревянной мебелью и мягким светом", description: "Двуязычный (RO/RU) сайт ресторана молдавской кухни с мгновенным переключением языков, афишей живой музыки, разделом меню и удобной формой бронирования.", tags: ["Мультиязычность (RO/RU)", "Брендинг", "Быстрая загрузка"], url: "https://acasa-la-mama.gojodenis70.workers.dev/" }
-    ],
+    skip: "Перейти к содержанию",
+    navProjects: "Проекты",
+    navServices: "Услуги",
+    navCalculator: "Калькулятор",
+    navProcess: "Как я работаю",
+    discuss: "Обсудить проект",
+    heroBadge: "Я работаю напрямую · международные проекты · USDT / USDC",
+    heroKicker: "Веб-разработка для международных команд",
+    heroTitle: "Я создаю сайты, которые превращают интерес в заявки",
+    heroDescription: "Проектирую и собираю лендинги и интерфейсы для Web3, SaaS и e-commerce — с понятным оффером, адаптивным UI и прямым путём к действию.",
+    seeProjects: "Смотреть демо-кейсы",
+    writeTelegram: "Написать мне в Telegram",
+    statLaunch: "сроки демо-разработки",
+    statResponsive: "адаптация под смартфоны",
+    statPayment: "принимаю стейблкоины",
+    buildPreview: "ЖИВОЕ ПРЕВЬЮ",
+    buildLive: "В РАБОТЕ",
+    buildOverline: "ЦИФРОВОЙ ОПЫТ",
+    buildHeading: "Создано для роста",
+    buildHeadingAccent: "бизнеса.",
+    buildChipWeb: "САЙТ",
+    buildChipSpeed: "БЫСТРО",
+    buildStatus: "Я собираю проект",
+    noteConversion: "Конверсия",
+    noteConversionSub: "с первого экрана",
+    noteFast: "Собираю без лишнего",
+    noteFastSub: "от идеи до сайта",
+    projectsLabel: "Избранные проекты",
+    projectsTitle: "Избранные проекты",
+    projectsAside: "Я показываю четыре демо-концепта — от Web3-протокола до сайта клиники.",
+    demoConcept: "Демо-концепт",
+    projectWeb3Title: "Лендинг Web3- и DeFi-протокола",
+    projectWeb3Description: "Я объясняю механику протокола и назначение токена, чтобы посетителю было проще понять продукт и подключить кошелёк.",
+    projectWeb3Category: "Crypto / Web3",
+    projectWeb3Time: "36 ч на сборку",
+    projectWeb3Stack: "HTML · Tailwind · JS",
+    projectAiTitle: "Аналитическая платформа AI SaaS",
+    projectAiDescription: "Я превращаю сложные продуктовые данные в ясную панель, чтобы команде было проще замечать тренды и выбирать следующий шаг.",
+    projectAiCategory: "AI / SaaS",
+    projectAiTime: "48 ч на сборку",
+    projectAiStack: "UI/UX · Frontend",
+    projectCommerceTitle: "Интернет-магазин премиального бренда",
+    projectCommerceDescription: "Я создаю премиальную витрину с выразительной подачей товара и коротким путём от знакомства с коллекцией к покупке.",
+    projectCommerceCategory: "E-Commerce",
+    projectCommerceTime: "48 ч на сборку",
+    projectCommerceStack: "Responsive · Conversion",
+    projectClinicTitle: "Сайт стоматологической и эстетической клиники",
+    projectClinicDescription: "Я объединяю услуги, сигналы доверия и простую запись, чтобы посетителю было легче сделать следующий шаг и оставить заявку.",
+    projectClinicCategory: "Local Business",
+    projectClinicTime: "24 ч на сборку",
+    projectClinicStack: "Lead Gen · SEO",
+    liveDemo: "Live Demo",
+    previewConnect: "Подключить кошелёк",
+    previewWeb3Title: "DeFi без сложностей.",
+    previewWeb3Copy: "Простой стейкинг. Прозрачные награды.",
+    previewOverview: "Обзор",
+    previewAnalytics: "Аналитика",
+    previewReports: "Отчёты",
+    previewAIHeading: "Сводка эффективности",
+    previewRevenue: "Выручка",
+    previewActiveUsers: "Активные пользователи",
+    previewTrend: "Динамика за неделю",
+    previewShopNav: "КОЛЛЕКЦИЯ&nbsp;&nbsp; О НАС",
+    previewNewCollection: "НОВАЯ КОЛЛЕКЦИЯ / 2026",
+    previewShopTitle: "Форма вне времени",
+    previewShopButton: "Смотреть коллекцию ↗",
+    previewClinicNav: "УСЛУГИ&nbsp;&nbsp; ВРАЧИ&nbsp;&nbsp; КОНТАКТЫ",
+    previewClinicButton: "Записаться",
+    previewClinicEyebrow: "СТОМАТОЛОГИЯ · ЭСТЕТИКА",
+    previewClinicTitle: "Улыбка, которой доверяют",
+    previewClinicCopy: "Забота о здоровье и уверенности — в одном месте.",
+    previewClinicCta: "Записаться на консультацию ↗",
+    servicesLabel: "Форматы работы",
+    servicesTitle: "Что я создаю",
+    servicesAside: "Я согласую объём и стоимость до старта, чтобы вы понимали ожидаемый результат.",
     services: [
-      { title: "Продающий лендинг", subtitle: "Одностраничный сайт под услуги, локальный бизнес или запуск рекламы.", price: 150, time: "1–2 дня", icon: "↗" },
-      { title: "Сайт со Smart-калькулятором", subtitle: "Интерактивный расчет стоимости под вашу нишу с отправкой заявки в Telegram или WhatsApp.", price: 200, time: "Под задачу", icon: "⌘" },
-      { title: "Мультиязычный сайт компании", subtitle: "Структура с переключением RU / RO / EN, картами, отзывами и базовой SEO-оптимизацией.", price: 250, time: "Под задачу", icon: "文" },
-      { title: "Web3 / Crypto-лендинг", subtitle: "Сайт для криптопроекта, токена или сервиса с дорожной картой и токеномикой.", price: 200, time: "Под задачу", icon: "◇" }
+      { title: "Лендинги для заявок", subtitle: "Я выстраиваю оффер, доверие и целевое действие в цельную адаптивную страницу.", price: 150, time: "24–48 ч", icon: "↗" },
+      { title: "Сайты с калькулятором", subtitle: "Я добавляю квиз или смету с прозрачным расчётом и отправкой заявки в Telegram.", price: 200, time: "По объёму", icon: "⌘" },
+      { title: "Многоязычные сайты", subtitle: "Я адаптирую интерфейс и структуру контента для разных языков без потери смысла.", price: 250, time: "По объёму", icon: "文" },
+      { title: "Web3 / DeFi-страницы", subtitle: "Я понятно подаю механику протокола, utility токена и ключевой путь пользователя.", price: 200, time: "По объёму", icon: "◇" }
     ],
-    baseOptions: [{ id: "landing", title: "Лендинг", price: 150 }, { id: "calculator", title: "Сайт с калькулятором / квизом", price: 200 }, { id: "multilingual", title: "Мультиязычный сайт", price: 250 }],
-    extras: [{ id: "language", title: "Дополнительный язык интерфейса", price: 40 }, { id: "copy", title: "Написание продающих текстов под нишу", price: 30 }, { id: "hosting", title: "Подключение домена и настройка хостинга", price: 20 }, { id: "rush", title: "Срочный запуск за 24 часа", price: 50 }],
-    stages: [{ title: "Бриф", body: "Обсуждаем задачу, нишу и структуру за 15 минут." }, { title: "Прототип", body: "Собираю дизайн и интерактив, показываю живую демо-версию по ссылке." }, { title: "Правки", body: "Доводим детали, тексты и мобильную версию до идеала." }, { title: "Запуск", body: "Передаю готовый код или разворачиваю сайт на вашем домене." }]
+    from: "от",
+    calculatorTitle: "Рассчитайте свой проект",
+    calculatorAside: "Я рассчитываю смету в USDT; итог уточню после короткого брифа.",
+    currencyList: "USDT / USDC / Криптовалюта",
+    projectType: "Тип проекта",
+    chooseBase: "Выберите основу сайта",
+    extrasTitle: "Дополнительные опции",
+    extrasSub: "Добавьте нужные возможности",
+    estimateLabel: "Предварительная оценка",
+    estimateCaption: "Ваш проект",
+    sendEstimate: "Отправить расчёт в Telegram",
+    estimateFootnote: "Я подтвержу итоговую стоимость после изучения задачи.",
+    calculatorAria: "Тип проекта",
+    baseOptions: [
+      { id: "landing", title: "Лендинг", price: 150 },
+      { id: "calculator", title: "Сайт с калькулятором / квизом", price: 200 },
+      { id: "multilingual", title: "Мультиязычный сайт", price: 250 }
+    ],
+    extras: [
+      { id: "language", title: "Дополнительный язык интерфейса", price: 40 },
+      { id: "copy", title: "Продающие тексты для вашей ниши", price: 30 },
+      { id: "hosting", title: "Подключение домена и настройка хостинга", price: 20 },
+      { id: "rush", title: "Срочный запуск за 24 часа", price: 50 }
+    ],
+    extraPrefix: "+",
+    noneSelected: "без дополнительных опций",
+    processLabel: "Просто и прозрачно",
+    processTitle: "Как я работаю",
+    processAside: "Я лично веду проект — от постановки задачи до передачи кода.",
+    stages: [
+      { title: "Бриф", body: "Уточняю аудиторию, цель, контент и критерии; фиксирую объём до начала работы." },
+      { title: "Прототип", body: "Собираю интерфейс и ключевые взаимодействия, затем показываю рабочую версию." },
+      { title: "Правки", body: "Проверяю адаптивность, разбираю ваши комментарии и вношу согласованные правки." },
+      { title: "Передача", body: "Передаю исходный код и помогаю с публикацией на выбранном вами домене." }
+    ],
+    paymentKicker: "Прямая оплата стейблкоинами",
+    paymentText: "Принимаю оплату напрямую в стейблкоинах: USDT / USDC (TRC-20, BEP-20, Arbitrum, Polygon, TON).",
+    contactLabel: "Связаться со мной",
+    contactTitle: "Я помогу превратить вашу идею в сайт, который ведёт к заявке.",
+    contactCopy: "Расскажите, для кого нужен сайт и какую задачу он должен решить. Я предложу формат и согласую объём напрямую с вами.",
+    copyright: "© 2026 GOJO DEV · Независимая веб-разработка",
+    backTop: "Наверх",
+    base: "Основа",
+    options: "Опции",
+    total: "Итого",
+    selected: "Выбрано"
   },
   en: {
-    skip: "Skip to content", navProjects: "Projects", navServices: "Services", navCalculator: "Calculator", navProcess: "Process", discuss: "Discuss a project",
-    heroBadge: "Websites delivered in 24–48 hours · USDT / card payments", heroKicker: "Web development for ambitious businesses", heroTitle: "I build websites that look premium and bring customers from search and ads", heroDescription: "Conversion-focused landing pages, multilingual business websites, and interactive web services—delivered end to end. Fast launch, mobile-ready design, and messenger integrations.", seeProjects: "Explore projects", writeTelegram: "Message on Telegram", statLaunch: "average time to launch", statResponsive: "responsive and fast", statPayment: "flexible payments", buildPreview: "LIVE PREVIEW", buildLive: "LIVE", buildOverline: "DIGITAL EXPERIENCES", buildHeading: "Built to move", buildHeadingAccent: "business.", buildChipWeb: "WEB", buildChipSpeed: "FAST", buildStatus: "Project launched", noteConversion: "Conversion", noteConversionSub: "comes first", noteFast: "Launch without delays", noteFastSub: "from idea to website",
-    projectsLabel: "Portfolio", projectsTitle: "Selected projects", projectsAside: "Real business needs. Thoughtful interfaces.<br />Digital work built to deliver.", openProject: "Open live website", servicesLabel: "What I do", servicesTitle: "Services & formats", servicesAside: "Choose the solution for your goal.<br />Final pricing depends on scope.", calculatorTitle: "Estimate your project", calculatorAside: "Build your website package<br />and see an indicative price.", projectType: "Project type", chooseBase: "Choose your website foundation", extrasTitle: "Optional add-ons", extrasSub: "Add the capabilities you need", estimateLabel: "Initial estimate", estimateCaption: "Your project", sendEstimate: "Send estimate on Telegram", estimateFootnote: "The final price is confirmed after discussing your brief.", processLabel: "Clear and straightforward", processTitle: "How it works", processAside: "A short path from the first idea<br />to a website that works.", paymentKicker: "Convenient payments", paymentText: "No unnecessary fees: I accept cryptocurrency (USDT TRC-20 / BEP-20 / TON via Binance and Bybit), as well as bank-card transfers.", contactLabel: "Get in touch", contactTitle: "Ready to launch a website that sets your business apart?", contactCopy: "Tell me what you need. We’ll discuss the format, timeline, and budget—no unnecessary formalities.", writeWhatsApp: "Message on WhatsApp", copyright: "© 2026 GOJO DEV · End-to-end website development", backTop: "Back to top", base: "Base", options: "Options", total: "Total", selected: "Selected", currency: "USDT",
-    projects: [
-      { name: "ATMOSFERA", place: "Restaurant · Comrat", image: "/images/atmosfera-interior.jpg", alt: "Modern restaurant interior in warm tones", description: "An atmospheric restaurant landing page with tabbed menus for grill, mains, and desserts, a banquet-hall showcase, reviews, and quick WhatsApp reservations.", tags: ["UI/UX Design", "Tabbed menu", "WhatsApp API", "Responsive"], url: "http://atmosfera-comrat.pages.dev" },
-      { name: "Premium Detailing", place: "Auto detailing studio · Chișinău", image: "/images/premium-detailing.jpg", alt: "Dark car being polished in a detailing studio", description: "A premium dark-theme studio website with an interactive smart price calculator, review slider, and messenger-ready quote sharing.", tags: ["Smart calculator", "Dark theme", "Conversion", "UI Design"], url: "https://premiumdetail.gojodenis70.workers.dev" },
-      { name: "Acasă la mama", place: "Traditional cuisine restaurant", image: "/images/acasa-interior.jpg", alt: "Cozy restaurant with wooden furniture and warm lighting", description: "A bilingual (RO/RU) Moldovan restaurant website with instant language switching, live music listings, a menu section, and a simple reservation form.", tags: ["Multilingual (RO/RU)", "Branding", "Fast loading"], url: "https://acasa-la-mama.gojodenis70.workers.dev/" }
-    ],
+    skip: "Skip to content",
+    navProjects: "Projects",
+    navServices: "Services",
+    navCalculator: "Estimator",
+    navProcess: "How I work",
+    discuss: "Discuss a project",
+    heroBadge: "I work directly with you · Global projects · USDT / USDC",
+    heroKicker: "Independent web development for global teams",
+    heroTitle: "I build websites that turn attention into qualified leads",
+    heroDescription: "I design and build focused landing pages and frontends for Web3, SaaS, and e-commerce—combining clear product messaging, responsive UI, and a direct path to action.",
+    seeProjects: "Explore demo work",
+    writeTelegram: "Message me on Telegram",
+    statLaunch: "demo build timelines",
+    statResponsive: "responsive across devices",
+    statPayment: "I accept stablecoins",
+    buildPreview: "LIVE PREVIEW",
+    buildLive: "IN PROGRESS",
+    buildOverline: "DIGITAL EXPERIENCE",
+    buildHeading: "Built for",
+    buildHeadingAccent: "business growth.",
+    buildChipWeb: "WEBSITE",
+    buildChipSpeed: "FOCUSED",
+    buildStatus: "I’m building the site",
+    noteConversion: "Conversion",
+    noteConversionSub: "starts above the fold",
+    noteFast: "Focused execution",
+    noteFastSub: "from brief to build",
+    projectsLabel: "Selected Projects",
+    projectsTitle: "Selected Projects",
+    projectsAside: "I use four demo concepts to show how I shape product stories—from Web3 protocols to clinic lead gen.",
+    demoConcept: "Demo concept",
+    projectWeb3Title: "Web3 & DeFi Protocol Landing Page",
+    projectWeb3Description: "I turn protocol mechanics and token utility into a clear journey from first visit to wallet connection.",
+    projectWeb3Category: "Crypto / Web3",
+    projectWeb3Time: "36h build",
+    projectWeb3Stack: "HTML · Tailwind · JavaScript",
+    projectAiTitle: "AI SaaS Analytics Platform",
+    projectAiDescription: "I turn dense product data into an at-a-glance dashboard that helps teams spot trends and choose what to do next.",
+    projectAiCategory: "AI / SaaS",
+    projectAiTime: "48h build",
+    projectAiStack: "UI/UX · Frontend",
+    projectCommerceTitle: "E-Commerce & Luxury Brand Storefront",
+    projectCommerceDescription: "I create a premium storefront with a clear product story and a smooth path from browsing the collection to checkout.",
+    projectCommerceCategory: "E-Commerce",
+    projectCommerceTime: "48h build",
+    projectCommerceStack: "Responsive · Conversion",
+    projectClinicTitle: "Dental & Aesthetic Clinic High-Converting Website",
+    projectClinicDescription: "I bring services, trust signals, and simple booking together so visitors can take the next step with confidence.",
+    projectClinicCategory: "Local Business",
+    projectClinicTime: "24h build",
+    projectClinicStack: "Lead Gen · SEO",
+    liveDemo: "Live Demo",
+    previewConnect: "Connect wallet",
+    previewWeb3Title: "DeFi, made clear.",
+    previewWeb3Copy: "Simple staking. Transparent rewards.",
+    previewOverview: "Overview",
+    previewAnalytics: "Analytics",
+    previewReports: "Reports",
+    previewAIHeading: "Performance overview",
+    previewRevenue: "Revenue",
+    previewActiveUsers: "Active users",
+    previewTrend: "Weekly growth",
+    previewShopNav: "COLLECTION&nbsp;&nbsp; ABOUT",
+    previewNewCollection: "NEW COLLECTION / 2026",
+    previewShopTitle: "Form, made timeless",
+    previewShopButton: "Explore the collection ↗",
+    previewClinicNav: "SERVICES&nbsp;&nbsp; TEAM&nbsp;&nbsp; CONTACT",
+    previewClinicButton: "Book a visit",
+    previewClinicEyebrow: "DENTAL · AESTHETIC CARE",
+    previewClinicTitle: "A smile you can feel good about",
+    previewClinicCopy: "Thoughtful care for your health and confidence.",
+    previewClinicCta: "Book a consultation ↗",
+    servicesLabel: "Ways I can help",
+    servicesTitle: "What I build",
+    servicesAside: "I define the scope and pricing with you before work begins, so the deliverable is clear.",
     services: [
-      { title: "Conversion landing page", subtitle: "A single-page website for services, local businesses, or an ad campaign.", price: 150, time: "1–2 days", icon: "↗" },
-      { title: "Smart calculator website", subtitle: "An interactive quote estimator for your niche, with Telegram or WhatsApp lead delivery.", price: 200, time: "As scoped", icon: "⌘" },
-      { title: "Multilingual company website", subtitle: "A complete structure with RU / RO / EN switching, maps, reviews, and baseline SEO.", price: 250, time: "As scoped", icon: "文" },
-      { title: "Web3 / Crypto landing page", subtitle: "A polished website for a crypto project, token, or service, with roadmap and tokenomics.", price: 200, time: "As scoped", icon: "◇" }
+      { title: "Conversion-focused landing pages", subtitle: "I shape the offer, trust signals, and primary action into one responsive page.", price: 150, time: "24–48h", icon: "↗" },
+      { title: "Interactive quote tools", subtitle: "I build guided selectors and transparent estimates with a Telegram inquiry handoff.", price: 200, time: "Scoped to fit", icon: "⌘" },
+      { title: "Multilingual websites", subtitle: "I adapt the interface and content structure across languages without losing the message.", price: 250, time: "Scoped to fit", icon: "文" },
+      { title: "Web3 / DeFi product pages", subtitle: "I explain protocol mechanics, token utility, and the core user journey with clarity.", price: 200, time: "Scoped to fit", icon: "◇" }
     ],
-    baseOptions: [{ id: "landing", title: "Landing page", price: 150 }, { id: "calculator", title: "Calculator / quiz website", price: 200 }, { id: "multilingual", title: "Multilingual website", price: 250 }],
-    extras: [{ id: "language", title: "Additional interface language", price: 40 }, { id: "copy", title: "Conversion copywriting for your niche", price: 30 }, { id: "hosting", title: "Domain connection and hosting setup", price: 20 }, { id: "rush", title: "Rush launch within 24 hours", price: 50 }],
-    stages: [{ title: "Brief", body: "We discuss your goal, niche, and structure in a 15-minute call." }, { title: "Prototype", body: "I build the design and interactions, then share a live demo link." }, { title: "Revisions", body: "We refine the details, copy, and mobile experience together." }, { title: "Launch", body: "I hand over the finished code or deploy the site to your domain." }]
+    from: "from",
+    calculatorTitle: "Estimate your project",
+    calculatorAside: "I price estimates in USDT and confirm the final scope after a short brief.",
+    currencyList: "USDT / USDC / Crypto",
+    projectType: "Project type",
+    chooseBase: "Choose a starting point",
+    extrasTitle: "Optional add-ons",
+    extrasSub: "Add only what you need",
+    estimateLabel: "Initial estimate",
+    estimateCaption: "Your project",
+    sendEstimate: "Send estimate on Telegram",
+    estimateFootnote: "I’ll confirm the final quote after reviewing your brief.",
+    calculatorAria: "Project type",
+    baseOptions: [
+      { id: "landing", title: "Landing page", price: 150 },
+      { id: "calculator", title: "Calculator / quiz website", price: 200 },
+      { id: "multilingual", title: "Multilingual website", price: 250 }
+    ],
+    extras: [
+      { id: "language", title: "Additional interface language", price: 40 },
+      { id: "copy", title: "Conversion copy for your niche", price: 30 },
+      { id: "hosting", title: "Domain connection and hosting setup", price: 20 },
+      { id: "rush", title: "Rush delivery within 24 hours", price: 50 }
+    ],
+    extraPrefix: "+",
+    noneSelected: "none",
+    processLabel: "Clear and straightforward",
+    processTitle: "How I work",
+    processAside: "I handle the work directly, from scoping through code handoff.",
+    stages: [
+      { title: "Brief", body: "I clarify your audience, goal, content, and success criteria before work begins." },
+      { title: "Prototype", body: "I build the interface and core interactions, then share a working version." },
+      { title: "Revisions", body: "I test responsive layouts, review your feedback, and make agreed revisions." },
+      { title: "Handoff", body: "I deliver the source code and support deployment to your chosen domain." }
+    ],
+    paymentKicker: "Direct stablecoin payments",
+    paymentText: "I accept direct stablecoin payments: USDT / USDC (TRC-20, BEP-20, Arbitrum, Polygon, TON).",
+    contactLabel: "Get in touch",
+    contactTitle: "I’ll help turn your idea into a website built to convert.",
+    contactCopy: "Tell me who the site is for and what it needs to achieve. I’ll recommend a format, agree on scope, and build it with you directly.",
+    copyright: "© 2026 GOJO DEV · Independent web development",
+    backTop: "Back to top",
+    base: "Base",
+    options: "Options",
+    total: "Total",
+    selected: "Selected"
   }
 };
 
-const PROJECT_URL = "https://t.me/NexusWeb_io";
-const OPTION_STATE = new Set();
+const TELEGRAM_URL = "https://t.me/NexusWeb_io";
+const EXTRA_SELECTIONS = new Set();
 let currentLanguage = "ru";
 let selectedBase = "landing";
+let revealObserver;
 
 function escapeHtml(value) {
-  return String(value).replace(/[&<>"']/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]);
+  return String(value).replace(/[&<>"']/g, character => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  })[character]);
 }
 
 function renderText() {
   const copy = COPY[currentLanguage];
   document.documentElement.lang = currentLanguage;
+
   document.querySelectorAll("[data-i18n]").forEach(node => {
     const key = node.dataset.i18n;
     if (copy[key] !== undefined) node.innerHTML = copy[key];
   });
+
   document.querySelectorAll(".lang-button").forEach(button => {
     const active = button.dataset.lang === currentLanguage;
     button.classList.toggle("is-active", active);
     button.setAttribute("aria-pressed", String(active));
   });
+
   document.querySelector(".language-switch")?.setAttribute("aria-label", currentLanguage === "ru" ? "Выбрать язык" : "Choose language");
   document.querySelector(".desktop-nav")?.setAttribute("aria-label", currentLanguage === "ru" ? "Основная навигация" : "Main navigation");
-  const menu = document.querySelector(".mobile-nav");
-  menu?.setAttribute("aria-label", currentLanguage === "ru" ? "Мобильная навигация" : "Mobile navigation");
-  const toggle = document.querySelector(".menu-toggle");
-  if (toggle) toggle.setAttribute("aria-label", currentLanguage === "ru" ? (toggle.getAttribute("aria-expanded") === "true" ? "Закрыть меню" : "Открыть меню") : (toggle.getAttribute("aria-expanded") === "true" ? "Close menu" : "Open menu"));
-  document.title = currentLanguage === "ru" ? "GOJO DEV // STUDIO — сайты, которые приводят клиентов" : "GOJO DEV // STUDIO — websites that bring customers";
-  renderProjects();
+  document.getElementById("mobile-nav")?.setAttribute("aria-label", currentLanguage === "ru" ? "Мобильная навигация" : "Mobile navigation");
+  const menuToggle = document.querySelector(".menu-toggle");
+  if (menuToggle) {
+    const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+    menuToggle.setAttribute("aria-label", currentLanguage === "ru" ? (isOpen ? "Закрыть меню" : "Открыть меню") : (isOpen ? "Close menu" : "Open menu"));
+  }
+
+  document.title = currentLanguage === "ru"
+    ? "GOJO DEV // STUDIO — независимая веб-разработка"
+    : "GOJO DEV // STUDIO — Independent Web Developer";
+
   renderServices();
   renderCalculator();
   renderStages();
 }
 
-function renderProjects() {
-  const copy = COPY[currentLanguage];
-  document.getElementById("project-grid").innerHTML = copy.projects.map((project, index) => `
-    <article class="project-card" data-reveal>
-      <div class="project-image"><img src="${project.image}" alt="${escapeHtml(project.alt)}" loading="lazy" /><span class="image-overlay"></span><span class="project-number">0${index + 1} / 03</span></div>
-      <div class="project-content">
-        <div class="project-title-row"><h3>${escapeHtml(project.name)}</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
-        <p class="project-place">${escapeHtml(project.place)}</p>
-        <p class="project-description">${escapeHtml(project.description)}</p>
-        <div class="tag-list">${project.tags.map(tag => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
-        <a class="project-link" href="${project.url}" target="_blank" rel="noopener noreferrer"><span>${escapeHtml(copy.openProject)}</span><span aria-hidden="true">↗</span></a>
-      </div>
-    </article>`).join("");
-  observeReveals();
-}
-
 function renderServices() {
   const copy = COPY[currentLanguage];
-  document.getElementById("services-grid").innerHTML = copy.services.map((service, index) => `
+  const container = document.getElementById("services-grid");
+  container.innerHTML = copy.services.map((service, index) => `
     <article class="service-card" data-reveal>
       <div class="service-top"><span>0${index + 1}</span><span class="service-icon" aria-hidden="true">${service.icon}</span></div>
-      <h3>${escapeHtml(service.title)}</h3><p>${escapeHtml(service.subtitle)}</p>
-      <div class="service-bottom"><span class="service-price">от ${service.price} <small>USDT</small></span><span class="service-time">${escapeHtml(service.time)}</span></div>
+      <h3>${escapeHtml(service.title)}</h3>
+      <p>${escapeHtml(service.subtitle)}</p>
+      <div class="service-bottom"><span class="service-price">${escapeHtml(copy.from)} ${service.price} <small>USDT</small></span><span class="service-time">${escapeHtml(service.time)}</span></div>
     </article>`).join("");
-  if (currentLanguage === "en") document.querySelectorAll(".service-price").forEach(node => { node.firstChild.textContent = "from " + node.firstChild.textContent.replace("от ", ""); });
   observeReveals();
 }
 
 function renderCalculator() {
   const copy = COPY[currentLanguage];
   const baseContainer = document.getElementById("project-options");
-  baseContainer.setAttribute("aria-label", currentLanguage === "ru" ? "Тип проекта" : "Project type");
+  baseContainer.setAttribute("aria-label", copy.calculatorAria);
   baseContainer.innerHTML = copy.baseOptions.map(option => `
     <button type="button" class="project-option" role="radio" aria-checked="${selectedBase === option.id}" data-base="${option.id}">
       <span class="option-name">${escapeHtml(option.title)}</span><span class="option-price">${option.price} USDT</span>
     </button>`).join("");
-  const extras = document.getElementById("extra-options");
-  extras.innerHTML = copy.extras.map(option => `
-    <label class="extra-option"><input type="checkbox" value="${option.id}" ${OPTION_STATE.has(option.id) ? "checked" : ""} /><span>${escapeHtml(option.title)}<small class="extra-price">+${option.price} USDT</small></span></label>`).join("");
-  baseContainer.querySelectorAll("[data-base]").forEach(button => button.addEventListener("click", () => { selectedBase = button.dataset.base; updateEstimate(); }));
-  extras.querySelectorAll("input").forEach(input => input.addEventListener("change", () => {
-    if (input.checked) OPTION_STATE.add(input.value); else OPTION_STATE.delete(input.value);
-    updateEstimate();
-  }));
+
+  const extrasContainer = document.getElementById("extra-options");
+  extrasContainer.innerHTML = copy.extras.map(option => `
+    <label class="extra-option"><input type="checkbox" value="${option.id}" ${EXTRA_SELECTIONS.has(option.id) ? "checked" : ""} /><span>${escapeHtml(option.title)}<small class="extra-price">${escapeHtml(copy.extraPrefix)}${option.price} USDT</small></span></label>`).join("");
+
+  baseContainer.querySelectorAll("[data-base]").forEach(button => {
+    button.addEventListener("click", () => {
+      selectedBase = button.dataset.base;
+      updateEstimate();
+    });
+  });
+  extrasContainer.querySelectorAll("input").forEach(input => {
+    input.addEventListener("change", () => {
+      if (input.checked) EXTRA_SELECTIONS.add(input.value);
+      else EXTRA_SELECTIONS.delete(input.value);
+      updateEstimate();
+    });
+  });
   updateEstimate();
 }
 
 function updateEstimate() {
   const copy = COPY[currentLanguage];
   const base = copy.baseOptions.find(option => option.id === selectedBase) || copy.baseOptions[0];
-  const extras = copy.extras.filter(option => OPTION_STATE.has(option.id));
+  const extras = copy.extras.filter(option => EXTRA_SELECTIONS.has(option.id));
   const total = base.price + extras.reduce((sum, option) => sum + option.price, 0);
-  document.querySelectorAll("[data-base]").forEach(button => button.setAttribute("aria-checked", String(button.dataset.base === selectedBase)));
+
+  document.querySelectorAll("[data-base]").forEach(button => {
+    button.setAttribute("aria-checked", String(button.dataset.base === selectedBase));
+  });
   document.getElementById("estimate-total").textContent = String(total);
+
   const rows = [{ label: base.title, price: base.price }, ...extras.map(option => ({ label: option.title, price: option.price }))];
-  document.getElementById("estimate-breakdown").innerHTML = rows.map(row => `<p class="breakdown-row"><span>${escapeHtml(row.label)}</span><span>${row.price} USDT</span></p>`).join("");
+  document.getElementById("estimate-breakdown").innerHTML = rows.map(row => `
+    <p class="breakdown-row"><span>${escapeHtml(row.label)}</span><span>${row.price} USDT</span></p>`).join("");
+
+  const selectedExtras = extras.length ? extras.map(option => option.title).join(", ") : copy.noneSelected;
   const message = currentLanguage === "ru"
-    ? `Здравствуйте! Хочу обсудить проект.\nФормат: ${base.title}\nОпции: ${extras.length ? extras.map(item => item.title).join(", ") : "без дополнительных опций"}\nИтого: ${total} USDT`
-    : `Hello! I'd like to discuss a project.\nPackage: ${base.title}\nAdd-ons: ${extras.length ? extras.map(item => item.title).join(", ") : "none"}\nTotal: ${total} USDT`;
-  document.getElementById("estimate-link").href = `${PROJECT_URL}?text=${encodeURIComponent(message)}`;
+    ? `Здравствуйте! Я хочу обсудить сайт.\nТип проекта: ${base.title}\nДополнительные опции: ${selectedExtras}\nПредварительная сумма: ${total} USDT`
+    : `Hi! I’d like to discuss a website project.\nProject type: ${base.title}\nSelected add-ons: ${selectedExtras}\nEstimated total: ${total} USDT`;
+  document.getElementById("estimate-link").href = `${TELEGRAM_URL}?text=${encodeURIComponent(message)}`;
 }
 
 function renderStages() {
@@ -142,23 +379,30 @@ function renderStages() {
   observeReveals();
 }
 
-let revealObserver;
 function observeReveals() {
+  const nodes = document.querySelectorAll("[data-reveal]:not(.is-visible)");
   if (!("IntersectionObserver" in window)) {
-    document.querySelectorAll("[data-reveal]").forEach(node => node.classList.add("is-visible"));
+    nodes.forEach(node => node.classList.add("is-visible"));
     return;
   }
-  if (!revealObserver) revealObserver = new IntersectionObserver(entries => entries.forEach(entry => {
-    if (entry.isIntersecting) { entry.target.classList.add("is-visible"); revealObserver.unobserve(entry.target); }
-  }), { threshold: 0.12, rootMargin: "0px 0px -24px 0px" });
-  document.querySelectorAll("[data-reveal]:not(.is-visible)").forEach(node => revealObserver.observe(node));
+  if (!revealObserver) {
+    revealObserver = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        revealObserver.unobserve(entry.target);
+      }
+    }), { threshold: 0.12, rootMargin: "0px 0px -24px 0px" });
+  }
+  nodes.forEach(node => revealObserver.observe(node));
 }
 
-document.querySelectorAll(".lang-button").forEach(button => button.addEventListener("click", () => {
-  if (button.dataset.lang === currentLanguage) return;
-  currentLanguage = button.dataset.lang;
-  renderText();
-}));
+document.querySelectorAll(".lang-button").forEach(button => {
+  button.addEventListener("click", () => {
+    if (button.dataset.lang === currentLanguage) return;
+    currentLanguage = button.dataset.lang;
+    renderText();
+  });
+});
 
 const menuToggle = document.querySelector(".menu-toggle");
 const mobileNav = document.getElementById("mobile-nav");
@@ -169,6 +413,7 @@ menuToggle.addEventListener("click", () => {
   document.body.classList.toggle("menu-open", open);
   menuToggle.setAttribute("aria-label", currentLanguage === "ru" ? (open ? "Закрыть меню" : "Открыть меню") : (open ? "Close menu" : "Open menu"));
 });
+
 mobileNav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
   mobileNav.hidden = true;
   menuToggle.setAttribute("aria-expanded", "false");

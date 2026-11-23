@@ -1,0 +1,122 @@
+/* Project cards and CSS-built demo previews; loaded after the main theme. */
+#projects .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+#projects .project-card { min-width: 0; display: flex; flex-direction: column; }
+#projects .project-card:last-child { grid-column: auto; }
+#projects .project-preview { height: 246px; padding: 17px; position: relative; overflow: hidden; isolation: isolate; background: #101013; }
+#projects .project-preview::before { content: ""; position: absolute; z-index: -1; width: 230px; height: 230px; top: -95px; right: -28px; border-radius: 50%; background: var(--preview-glow, rgba(201,180,137,.14)); filter: blur(28px); }
+#projects .preview-web3 { --preview-accent: #72d7b1; --preview-glow: rgba(47, 192, 145, .17); background: radial-gradient(ellipse at 80% 14%, rgba(35, 133, 105, .22), transparent 42%), #101614; }
+#projects .preview-ai { --preview-accent: #a99aff; --preview-glow: rgba(137, 114, 248, .2); background: radial-gradient(ellipse at 88% 12%, rgba(107, 81, 216, .2), transparent 45%), #111116; }
+#projects .preview-commerce { --preview-accent: #b48d5c; --preview-glow: rgba(173, 139, 94, .18); background: linear-gradient(145deg, #393126, #1e1a17 65%); }
+#projects .preview-clinic { --preview-accent: #61a99a; --preview-glow: rgba(84, 172, 149, .18); background: linear-gradient(145deg, #23302d, #141a19 72%); }
+#projects .mockup-browserbar { height: 24px; padding: 0 8px; display: flex; align-items: center; gap: 9px; border: 1px solid rgba(255,255,255,.1); border-bottom: 0; border-radius: 5px 5px 0 0; color: #72727a; background: #151518; font-size: 7px; }
+#projects .mockup-browserbar .window-dots { gap: 3px; }
+#projects .mockup-browserbar .window-dots i { width: 4px; height: 4px; }
+#projects .mockup-address { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#projects .mockup-status { margin-left: auto; color: var(--preview-accent); font-size: 6px; letter-spacing: .05em; white-space: nowrap; }
+#projects .mockup-web3-page, #projects .mockup-ai-page, #projects .mockup-shop-page, #projects .mockup-clinic-page { height: calc(100% - 24px); position: relative; overflow: hidden; border: 1px solid rgba(255,255,255,.1); border-radius: 0 0 5px 5px; }
+#projects .mockup-web3-page { padding: 13px 18px; color: #f1f2ef; background: radial-gradient(circle at 78% 69%, rgba(41, 170, 128, .12), transparent 30%), linear-gradient(145deg, #101d19, #101312 75%); }
+#projects .mockup-nav, #projects .mockup-shop-nav, #projects .mockup-clinic-nav { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+#projects .mockup-brand { color: #edf4f0; font-family: Manrope, sans-serif; font-size: 8px; letter-spacing: .1em; font-weight: 800; white-space: nowrap; }
+#projects .mockup-brand b { color: var(--preview-accent); font-size: 6px; font-weight: 600; }
+#projects .mockup-nav-label { color: #89938f; font-size: 6px; letter-spacing: .12em; }
+#projects .mockup-pill { padding: 6px 9px; border-radius: 3px; color: #102019; background: var(--preview-accent); font-size: 7px; font-weight: 700; white-space: nowrap; }
+#projects .mockup-web3-copy { position: relative; z-index: 1; margin-top: 16px; }
+#projects .mockup-eyebrow { margin: 0 0 6px; color: var(--preview-accent); font-size: 6px; letter-spacing: .17em; }
+#projects .mockup-web3-copy h3 { max-width: 260px; margin: 0; color: #f3f4f2; font-size: clamp(18px, 2.4vw, 27px); line-height: 1; letter-spacing: -.055em; }
+#projects .mockup-web3-copy > p:last-child { margin: 6px 0 0; color: #a3aca8; font-size: 7px; }
+#projects .mockup-web3-stats { position: absolute; right: 16px; bottom: 12px; left: 18px; display: flex; align-items: flex-end; gap: 18px; color: #8e9b95; font-size: 6px; letter-spacing: .08em; }
+#projects .mockup-web3-stats span { display: grid; gap: 3px; }
+#projects .mockup-web3-stats b { color: #eef3ef; font-size: 11px; letter-spacing: -.02em; }
+#projects .mockup-web3-stats svg { width: 88px; height: 30px; margin-left: auto; overflow: visible; }
+#projects .mockup-web3-stats path { fill: none; stroke: var(--preview-accent); stroke-width: 1.5; }
+#projects .mockup-ai-page { display: grid; grid-template-columns: 72px 1fr; color: #dedde7; background: #18171f; }
+#projects .mockup-ai-sidebar { padding: 13px 8px; display: flex; flex-direction: column; gap: 11px; border-right: 1px solid rgba(255,255,255,.06); color: #777482; font-size: 6px; }
+#projects .mockup-ai-sidebar span:not(.mockup-ai-mark) { padding-left: 5px; white-space: nowrap; }
+#projects .mockup-ai-sidebar span:nth-child(2) { padding-block: 5px; border-left: 1px solid var(--preview-accent); color: #ded9ff; background: rgba(169,154,255,.08); }
+#projects .mockup-ai-mark { width: 17px; height: 17px; display: grid; place-items: center; border: 1px solid rgba(169,154,255,.4); border-radius: 5px; color: var(--preview-accent); font-size: 11px; }
+#projects .mockup-ai-main { min-width: 0; padding: 13px 13px 10px; }
+#projects .mockup-ai-heading { display: flex; justify-content: space-between; align-items: center; color: #e8e6ef; font-size: 8px; font-weight: 600; }
+#projects .mockup-ai-period { padding: 4px 6px; border: 1px solid rgba(255,255,255,.09); border-radius: 3px; color: #9793a4; font-size: 6px; }
+#projects .mockup-metrics { margin-top: 10px; display: grid; grid-template-columns: 1fr 1fr; gap: 7px; }
+#projects .mockup-metrics > div { min-width: 0; padding: 7px; display: grid; gap: 3px; border: 1px solid rgba(255,255,255,.07); border-radius: 4px; background: rgba(255,255,255,.018); }
+#projects .mockup-metrics small { overflow: hidden; color: #8c8998; font-size: 6px; text-overflow: ellipsis; white-space: nowrap; }
+#projects .mockup-metrics b { color: #f0eef5; font-family: Manrope, sans-serif; font-size: 11px; }
+#projects .mockup-metrics em { color: #8ed4b7; font-size: 6px; font-style: normal; }
+#projects .mockup-chart-head { margin-top: 9px; display: flex; justify-content: space-between; color: #aaa7b4; font-size: 6px; }
+#projects .mockup-chart-head span:last-child { color: var(--preview-accent); }
+#projects .mockup-bars { height: 31px; margin-top: 4px; display: flex; align-items: flex-end; gap: 5px; border-bottom: 1px solid rgba(255,255,255,.08); background: repeating-linear-gradient(to bottom, transparent 0 9px, rgba(255,255,255,.04) 10px); }
+#projects .mockup-bars i { flex: 1; height: 38%; border-radius: 2px 2px 0 0; background: linear-gradient(var(--preview-accent), rgba(169,154,255,.17)); }
+#projects .mockup-bars i:nth-child(3n) { height: 74%; }
+#projects .mockup-bars i:nth-child(4n) { height: 55%; }
+#projects .mockup-bars i:nth-child(5n) { height: 92%; }
+#projects .mockup-shop-page { color: #27221c; background: #e8dfd0; }
+#projects .mockup-shop-nav { height: 32px; padding: 0 14px; border-bottom: 1px solid rgba(39,34,28,.12); }
+#projects .mockup-shop-brand { font-family: Manrope, sans-serif; font-size: 8px; letter-spacing: .12em; font-weight: 800; white-space: nowrap; }
+#projects .mockup-shop-brand i { color: #8b6f4f; font-style: normal; font-weight: 500; }
+#projects .mockup-shop-nav > span:nth-child(2) { color: #6a6258; font-size: 6px; letter-spacing: .08em; }
+#projects .mockup-bag { color: #72695d; font-size: 6px; white-space: nowrap; }
+#projects .mockup-shop-hero { height: calc(100% - 32px); padding: 13px 17px; position: relative; display: flex; align-items: center; overflow: hidden; background: radial-gradient(ellipse at 76% 45%, #d8c8b1, transparent 43%), linear-gradient(120deg,#e9e0d3,#d9caba); }
+#projects .mockup-shop-copy { position: relative; z-index: 2; max-width: 58%; }
+#projects .mockup-shop-copy p { margin: 0 0 7px; color: #806e59; font-size: 6px; letter-spacing: .14em; }
+#projects .mockup-shop-copy h3 { margin: 0 0 11px; color: #29231e; font-size: clamp(16px, 2vw, 23px); line-height: 1; letter-spacing: -.06em; }
+#projects .mockup-shop-copy > span { padding-bottom: 3px; border-bottom: 1px solid rgba(80,64,47,.45); color: #514536; font-size: 6px; }
+#projects .mockup-product-art { width: 37%; height: 75%; position: absolute; right: 9%; bottom: 5%; display: grid; place-items: center; }
+#projects .mockup-bag-shape { width: 73px; height: 62px; position: absolute; top: 29%; border: 1px solid rgba(71,50,33,.45); border-radius: 5px 5px 11px 11px; background: linear-gradient(125deg,#ad8b65,#755b40 68%,#59432f); box-shadow: 12px 12px 19px rgba(42,32,24,.23); transform: rotate(-7deg); }
+#projects .mockup-handle { width: 32px; height: 28px; position: absolute; top: 13%; border: 3px solid #73583d; border-bottom: 0; border-radius: 18px 18px 0 0; transform: rotate(-7deg); }
+#projects .mockup-bag-clasp { width: 7px; height: 7px; position: absolute; top: 49%; z-index: 1; border: 1px solid #d6bd93; border-radius: 50%; transform: rotate(-7deg); }
+#projects .mockup-clinic-page { color: #25332e; background: #eff3f0; }
+#projects .mockup-clinic-nav { height: 31px; padding: 0 12px; border-bottom: 1px solid rgba(37,51,46,.1); }
+#projects .mockup-clinic-brand { font-family: Manrope, sans-serif; font-size: 7px; letter-spacing: .08em; font-weight: 800; white-space: nowrap; }
+#projects .mockup-clinic-brand span { color: #82918a; font-size: 6px; font-weight: 500; }
+#projects .mockup-clinic-nav > span:nth-child(2) { color: #687870; font-size: 5px; letter-spacing: .08em; }
+#projects .mockup-clinic-book { padding: 5px 7px; border-radius: 2px; color: #f7faf8; background: #47776b; font-size: 6px; white-space: nowrap; }
+#projects .mockup-clinic-hero { height: calc(100% - 31px); padding: 11px 13px; position: relative; display: flex; align-items: center; overflow: hidden; background: linear-gradient(110deg,#eff3f0 0 56%,#e0eae5 100%); }
+#projects .mockup-clinic-copy { max-width: 60%; position: relative; z-index: 2; }
+#projects .mockup-clinic-copy > p:first-child { margin: 0 0 5px; color: #638579; font-size: 5px; letter-spacing: .13em; }
+#projects .mockup-clinic-copy h3 { margin: 0 0 5px; color: #25332e; font-size: clamp(14px, 1.9vw, 20px); line-height: 1; letter-spacing: -.05em; }
+#projects .mockup-clinic-copy > p:nth-of-type(2) { margin: 0 0 8px; color: #718078; font-size: 6px; }
+#projects .mockup-clinic-copy > span { color: #47776b; font-size: 6px; font-weight: 700; }
+#projects .mockup-clinic-art { width: 34%; height: 88%; position: absolute; right: 5%; bottom: 0; overflow: hidden; border-radius: 50% 50% 0 0; background: linear-gradient(150deg,#cedbd3,#a9c1b6); }
+#projects .clinic-face { width: 34px; height: 43px; position: absolute; top: 12%; left: 37%; border-radius: 48% 48% 42% 42%; background: linear-gradient(110deg,#e4c9b5,#b8917a); box-shadow: 0 37px 0 12px #6e8e81; }
+#projects .clinic-face::after { content: ""; width: 7px; height: 23px; position: absolute; top: 42px; left: 13px; border-radius: 0 0 8px 8px; background: #e4c9b5; }
+#projects .clinic-plant { width: 31px; height: 46px; position: absolute; right: -2px; bottom: 0; border-left: 1px solid rgba(48,97,76,.55); transform: rotate(18deg); }
+#projects .clinic-plant::before, #projects .clinic-plant::after { content: ""; width: 17px; height: 7px; position: absolute; top: 10px; left: -15px; border-radius: 100% 0; background: #739684; transform: rotate(-26deg); box-shadow: 7px 15px 0 -1px #789a85; }
+#projects .mockup-clinic-art > span { position: absolute; right: 8px; bottom: 6px; color: rgba(37,51,46,.55); font-size: 5px; letter-spacing: .12em; }
+#projects .project-content { flex: 1; display: flex; flex-direction: column; padding: 18px 19px 17px; }
+#projects .project-content h3 { max-width: 95%; font-size: clamp(14px, 1.45vw, 17px); line-height: 1.35; }
+#projects .project-place { margin: 7px 0 12px; display: flex; align-items: center; justify-content: space-between; gap: 9px; font-size: 9px; }
+#projects .project-category { color: var(--accent-bright); white-space: nowrap; }
+#projects .project-description { min-height: 58px; margin-bottom: 14px; font-size: 10px; line-height: 1.65; }
+#projects .project-facts { margin-top: auto; padding-top: 11px; display: flex; align-items: center; justify-content: space-between; gap: 8px; border-top: 1px solid var(--line); }
+#projects .project-time { display: inline-flex; align-items: center; gap: 5px; padding: 5px 7px; border: 1px solid rgba(201,180,137,.26); border-radius: 3px; color: var(--accent-bright); background: rgba(201,180,137,.06); font-size: 8px; font-weight: 600; white-space: nowrap; }
+#projects .project-stack { color: #8d8d97; font-size: 8px; text-align: right; }
+#projects .project-link { margin-top: 13px; width: fit-content; font-size: 10px; }
+#projects .project-card:hover .project-preview { filter: brightness(1.06); }
+#projects .project-preview { transition: filter .3s ease; }
+.hero-stat strong.hero-currency { display: block; font-size: clamp(9px, 1vw, 12px); line-height: 1.45; letter-spacing: 0; overflow-wrap: anywhere; }
+.calculator-currencies { margin: 10px 0 0; color: var(--accent-bright); font-size: 9px; letter-spacing: .06em; }
+.footer-contact-links { display: flex; align-items: center; gap: 17px; }
+.footer-contact-links a { color: #9a9aa3; font-size: 9px; transition: color .2s ease; }
+.footer-contact-links a:hover { color: var(--accent-bright); }
+.email-button { overflow-wrap: anywhere; }
+
+@media (max-width: 1020px) {
+  #projects .project-preview { height: 226px; padding: 13px; }
+  #projects .project-content { padding-inline: 15px; }
+}
+@media (max-width: 780px) {
+  #projects .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
+  #projects .project-card:last-child { grid-column: auto; }
+  #projects .project-preview { height: 212px; padding: 11px; }
+  #projects .project-description { min-height: 72px; }
+  .footer-contact-links { gap: 12px; }
+}
+@media (max-width: 540px) {
+  #projects .project-grid { grid-template-columns: 1fr; gap: 12px; }
+  #projects .project-preview { height: 226px; padding: 14px; }
+  #projects .project-content { padding: 18px 16px 16px; }
+  #projects .project-content h3 { font-size: 16px; }
+  #projects .project-description { min-height: 0; }
+  .footer-contact-links { grid-column: 1 / -1; grid-row: 2; flex-wrap: wrap; }
+  .footer-inner p { grid-row: 3; }
+}
